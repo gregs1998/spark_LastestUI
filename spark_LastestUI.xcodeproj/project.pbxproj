@@ -14,6 +14,17 @@
 		2664A25423F3090C00EAF2E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2664A25323F3090C00EAF2E0 /* Assets.xcassets */; };
 		2664A25723F3090C00EAF2E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2664A25623F3090C00EAF2E0 /* Preview Assets.xcassets */; };
 		2664A25A23F3090C00EAF2E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2664A25823F3090C00EAF2E0 /* LaunchScreen.storyboard */; };
+		2664A26223F30B6700EAF2E0 /* AddTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664A26123F30B6700EAF2E0 /* AddTutorialView.swift */; };
+		2664A26423F30F5900EAF2E0 /* AddStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664A26323F30F5900EAF2E0 /* AddStepsView.swift */; };
+		2664A26623F3123900EAF2E0 /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664A26523F3123900EAF2E0 /* StepsView.swift */; };
+		2664A26923F31F9B00EAF2E0 /* Tutorial+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664A26723F31F9B00EAF2E0 /* Tutorial+CoreDataClass.swift */; };
+		2664A26A23F31F9B00EAF2E0 /* Tutorial+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664A26823F31F9B00EAF2E0 /* Tutorial+CoreDataProperties.swift */; };
+		2664A26D23F322CA00EAF2E0 /* Step+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664A26B23F322CA00EAF2E0 /* Step+CoreDataClass.swift */; };
+		2664A26E23F322CA00EAF2E0 /* Step+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664A26C23F322CA00EAF2E0 /* Step+CoreDataProperties.swift */; };
+		2698B9D323F44446004CE053 /* FetchSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698B9D223F44446004CE053 /* FetchSteps.swift */; };
+		26F8F68023F34EF700589214 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F8F67F23F34EF700589214 /* HomeView.swift */; };
+		26F8F68223F354B700589214 /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F8F68123F354B700589214 /* ChoiceView.swift */; };
+		26F8F68423F3597900589214 /* speechModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F8F68323F3597900589214 /* speechModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,17 @@
 		2664A25623F3090C00EAF2E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2664A25923F3090C00EAF2E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2664A25B23F3090C00EAF2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2664A26123F30B6700EAF2E0 /* AddTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTutorialView.swift; sourceTree = "<group>"; };
+		2664A26323F30F5900EAF2E0 /* AddStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStepsView.swift; sourceTree = "<group>"; };
+		2664A26523F3123900EAF2E0 /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
+		2664A26723F31F9B00EAF2E0 /* Tutorial+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tutorial+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		2664A26823F31F9B00EAF2E0 /* Tutorial+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tutorial+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		2664A26B23F322CA00EAF2E0 /* Step+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		2664A26C23F322CA00EAF2E0 /* Step+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		2698B9D223F44446004CE053 /* FetchSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSteps.swift; sourceTree = "<group>"; };
+		26F8F67F23F34EF700589214 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = SOURCE_ROOT; };
+		26F8F68123F354B700589214 /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
+		26F8F68323F3597900589214 /* speechModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speechModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +80,20 @@
 		2664A24923F3090900EAF2E0 /* spark_LastestUI */ = {
 			isa = PBXGroup;
 			children = (
+				26F8F67F23F34EF700589214 /* HomeView.swift */,
+				2664A26B23F322CA00EAF2E0 /* Step+CoreDataClass.swift */,
+				2664A26C23F322CA00EAF2E0 /* Step+CoreDataProperties.swift */,
+				2664A26723F31F9B00EAF2E0 /* Tutorial+CoreDataClass.swift */,
+				2664A26823F31F9B00EAF2E0 /* Tutorial+CoreDataProperties.swift */,
 				2664A24A23F3090900EAF2E0 /* AppDelegate.swift */,
 				2664A24C23F3090900EAF2E0 /* SceneDelegate.swift */,
 				2664A25123F3090900EAF2E0 /* ContentView.swift */,
+				2664A26323F30F5900EAF2E0 /* AddStepsView.swift */,
+				2664A26523F3123900EAF2E0 /* StepsView.swift */,
+				2698B9D223F44446004CE053 /* FetchSteps.swift */,
+				26F8F68123F354B700589214 /* ChoiceView.swift */,
+				26F8F68323F3597900589214 /* speechModel.swift */,
+				2664A26123F30B6700EAF2E0 /* AddTutorialView.swift */,
 				2664A25323F3090C00EAF2E0 /* Assets.xcassets */,
 				2664A25823F3090C00EAF2E0 /* LaunchScreen.storyboard */,
 				2664A25B23F3090C00EAF2E0 /* Info.plist */,
@@ -149,10 +182,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2664A26E23F322CA00EAF2E0 /* Step+CoreDataProperties.swift in Sources */,
+				2698B9D323F44446004CE053 /* FetchSteps.swift in Sources */,
 				2664A24B23F3090900EAF2E0 /* AppDelegate.swift in Sources */,
+				26F8F68223F354B700589214 /* ChoiceView.swift in Sources */,
+				2664A26D23F322CA00EAF2E0 /* Step+CoreDataClass.swift in Sources */,
 				2664A25023F3090900EAF2E0 /* spark_LastestUI.xcdatamodeld in Sources */,
+				2664A26A23F31F9B00EAF2E0 /* Tutorial+CoreDataProperties.swift in Sources */,
+				2664A26423F30F5900EAF2E0 /* AddStepsView.swift in Sources */,
+				2664A26623F3123900EAF2E0 /* StepsView.swift in Sources */,
 				2664A25223F3090900EAF2E0 /* ContentView.swift in Sources */,
+				26F8F68423F3597900589214 /* speechModel.swift in Sources */,
 				2664A24D23F3090900EAF2E0 /* SceneDelegate.swift in Sources */,
+				26F8F68023F34EF700589214 /* HomeView.swift in Sources */,
+				2664A26223F30B6700EAF2E0 /* AddTutorialView.swift in Sources */,
+				2664A26923F31F9B00EAF2E0 /* Tutorial+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
