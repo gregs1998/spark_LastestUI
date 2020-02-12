@@ -25,5 +25,29 @@ extension Step {
     @NSManaged public var componentType: String?
     @NSManaged public var id: UUID?
     @NSManaged public var tutorial: Tutorial?
-
+    @NSManaged public var stepNum: Int16
+    
+    var wrappedDescrip: String{
+        descrip ?? "Unknown Description"
+    }
+    
+    var wrappedPos1Row: String{
+        pos1Row ?? "0"
+    }
+    
+    var wrappedPos1Column: String{
+        pos1Column ?? "A"
+    }
+    
+    var wrappedPos2Row: String{
+        pos2Row ?? "0"
+    }
+    
+    var wrappedPos2Column: String{
+        pos2Column ?? "A"
+    }
+    
+    var wrappedComponentType: String{
+        componentType ?? "Resistor"
+    }
 }

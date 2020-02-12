@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,13 +21,15 @@
 		2664A26A23F31F9B00EAF2E0 /* Tutorial+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664A26823F31F9B00EAF2E0 /* Tutorial+CoreDataProperties.swift */; };
 		2664A26D23F322CA00EAF2E0 /* Step+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664A26B23F322CA00EAF2E0 /* Step+CoreDataClass.swift */; };
 		2664A26E23F322CA00EAF2E0 /* Step+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664A26C23F322CA00EAF2E0 /* Step+CoreDataProperties.swift */; };
-		2698B9D323F44446004CE053 /* FetchSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2698B9D223F44446004CE053 /* FetchSteps.swift */; };
+		2691B5C023F475B4008DECE9 /* StepsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2691B5BF23F475B4008DECE9 /* StepsList.swift */; };
 		26F8F68023F34EF700589214 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F8F67F23F34EF700589214 /* HomeView.swift */; };
 		26F8F68223F354B700589214 /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F8F68123F354B700589214 /* ChoiceView.swift */; };
 		26F8F68423F3597900589214 /* speechModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F8F68323F3597900589214 /* speechModel.swift */; };
+		BD86D655E100ACE9D29E793A /* Pods_spark_LastestUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD5110438ACAFD61B168861 /* Pods_spark_LastestUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AC6FEE2ED57F13AD9F1F58C /* Pods-spark_LastestUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spark_LastestUI.debug.xcconfig"; path = "Target Support Files/Pods-spark_LastestUI/Pods-spark_LastestUI.debug.xcconfig"; sourceTree = "<group>"; };
 		2664A24723F3090900EAF2E0 /* spark_LastestUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spark_LastestUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2664A24A23F3090900EAF2E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2664A24C23F3090900EAF2E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,10 +46,12 @@
 		2664A26823F31F9B00EAF2E0 /* Tutorial+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tutorial+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		2664A26B23F322CA00EAF2E0 /* Step+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		2664A26C23F322CA00EAF2E0 /* Step+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		2698B9D223F44446004CE053 /* FetchSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSteps.swift; sourceTree = "<group>"; };
+		2691B5BF23F475B4008DECE9 /* StepsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsList.swift; sourceTree = "<group>"; };
 		26F8F67F23F34EF700589214 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = SOURCE_ROOT; };
 		26F8F68123F354B700589214 /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 		26F8F68323F3597900589214 /* speechModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speechModel.swift; sourceTree = "<group>"; };
+		ACD5110438ACAFD61B168861 /* Pods_spark_LastestUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spark_LastestUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB61DA532FC070F296CF36E /* Pods-spark_LastestUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spark_LastestUI.release.xcconfig"; path = "Target Support Files/Pods-spark_LastestUI/Pods-spark_LastestUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD86D655E100ACE9D29E793A /* Pods_spark_LastestUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 			children = (
 				2664A24923F3090900EAF2E0 /* spark_LastestUI */,
 				2664A24823F3090900EAF2E0 /* Products */,
+				D91714F659E4B83BFA3EBF51 /* Pods */,
+				9208711D933DD98EA603BBA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,7 +97,7 @@
 				2664A25123F3090900EAF2E0 /* ContentView.swift */,
 				2664A26323F30F5900EAF2E0 /* AddStepsView.swift */,
 				2664A26523F3123900EAF2E0 /* StepsView.swift */,
-				2698B9D223F44446004CE053 /* FetchSteps.swift */,
+				2691B5BF23F475B4008DECE9 /* StepsList.swift */,
 				26F8F68123F354B700589214 /* ChoiceView.swift */,
 				26F8F68323F3597900589214 /* speechModel.swift */,
 				2664A26123F30B6700EAF2E0 /* AddTutorialView.swift */,
@@ -111,6 +118,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9208711D933DD98EA603BBA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACD5110438ACAFD61B168861 /* Pods_spark_LastestUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D91714F659E4B83BFA3EBF51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AC6FEE2ED57F13AD9F1F58C /* Pods-spark_LastestUI.debug.xcconfig */,
+				CBB61DA532FC070F296CF36E /* Pods-spark_LastestUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2664A25E23F3090C00EAF2E0 /* Build configuration list for PBXNativeTarget "spark_LastestUI" */;
 			buildPhases = (
+				C30B30E1FBEF5354D83C09DE /* [CP] Check Pods Manifest.lock */,
 				2664A24323F3090900EAF2E0 /* Sources */,
 				2664A24423F3090900EAF2E0 /* Frameworks */,
 				2664A24523F3090900EAF2E0 /* Resources */,
+				4425D0382D9B5564C71BE1E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,16 +203,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4425D0382D9B5564C71BE1E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spark_LastestUI/Pods-spark_LastestUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spark_LastestUI/Pods-spark_LastestUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spark_LastestUI/Pods-spark_LastestUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C30B30E1FBEF5354D83C09DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-spark_LastestUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2664A24323F3090900EAF2E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2664A26E23F322CA00EAF2E0 /* Step+CoreDataProperties.swift in Sources */,
-				2698B9D323F44446004CE053 /* FetchSteps.swift in Sources */,
 				2664A24B23F3090900EAF2E0 /* AppDelegate.swift in Sources */,
 				26F8F68223F354B700589214 /* ChoiceView.swift in Sources */,
 				2664A26D23F322CA00EAF2E0 /* Step+CoreDataClass.swift in Sources */,
+				2691B5C023F475B4008DECE9 /* StepsList.swift in Sources */,
 				2664A25023F3090900EAF2E0 /* spark_LastestUI.xcdatamodeld in Sources */,
 				2664A26A23F31F9B00EAF2E0 /* Tutorial+CoreDataProperties.swift in Sources */,
 				2664A26423F30F5900EAF2E0 /* AddStepsView.swift in Sources */,
@@ -330,6 +398,7 @@
 		};
 		2664A25F23F3090C00EAF2E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AC6FEE2ED57F13AD9F1F58C /* Pods-spark_LastestUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -350,6 +419,7 @@
 		};
 		2664A26023F3090C00EAF2E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBB61DA532FC070F296CF36E /* Pods-spark_LastestUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

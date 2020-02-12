@@ -56,6 +56,7 @@ struct AddStepsView: View {
             .navigationBarTitle("Add Step")
             .navigationBarItems(trailing: Button("Done"){
                 let newStep = Step(context: self.moc)
+                //self.tutorialToAddStep.stepCount = self.tutorialToAddStep.stepCount+1
                 newStep.descrip = self.description
                 newStep.componentType = self.componentType
                 newStep.pos1Row = self.pos1Row
@@ -63,8 +64,7 @@ struct AddStepsView: View {
                 newStep.pos2Row = self.pos2Row
                 newStep.pos2Column = self.pos2Column
                 newStep.tutorial = self.tutorialToAddStep
-                self.tutorialToAddStep.stepCount = self.tutorialToAddStep.stepCount + 1
-                
+                newStep.stepNum = Int16(self.tutorialToAddStep.unwrappedStep.count)
                 try? self.moc.save()
                 self.presentationMode.wrappedValue.dismiss()
             })

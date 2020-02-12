@@ -24,7 +24,6 @@ struct AddTutorialView: View {
                     Button("Save Tutorial"){
                         let newTutorial = Tutorial(context: self.moc)
                         newTutorial.title = self.title
-                        newTutorial.stepCount = 0
                         
                         try? self.moc.save()
                         self.presentationMode.wrappedValue.dismiss()

@@ -13,7 +13,6 @@ struct ContentView: View {
     @FetchRequest(entity: Tutorial.entity(), sortDescriptors: []) var tutorials: FetchedResults<Tutorial>
     
     @State private var showingAddScreen = false
-    @State private var showingSheet = false
     
     func deleteTutorial(at offsets: IndexSet){
         for offset in offsets{
@@ -48,10 +47,10 @@ struct ContentView: View {
                 .sheet(isPresented: $showingAddScreen){
                     AddTutorialView().environment(\.managedObjectContext, self.moc)
             }
+        }
                 
         //}
     }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

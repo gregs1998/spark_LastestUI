@@ -1,0 +1,18 @@
+PODS:
+  - Groot (3.0.1):
+    - Groot/Swift (= 3.0.1)
+  - Groot/Swift (3.0.1)
+
+DEPENDENCIES:
+  - Groot
+
+SPEC REPOS:
+  trunk:
+    - Groot
+
+SPEC CHECKSUMS:
+  Groot: a668afbcf0be88d76c0a26c714cfa4638ceaca66
+
+PODFILE CHECKSUM: 06064ac9a50a179428c63813ffa149c04fa53da2
+
+COCOAPODS: 1.8.4

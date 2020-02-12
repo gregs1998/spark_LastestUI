@@ -11,18 +11,24 @@ import SwiftUI
 struct ChoiceView: View {
     @Environment(\.presentationMode) var presentationMode
     
+    @State private var showingAlert = false
+    
     let tutorial: Tutorial
     var body: some View {
         Form{
             NavigationLink(destination: StepsView(currentTutorial: tutorial)){
                 Text("Edit Tutorial")
             }
-            NavigationLink(destination: Text("Hi")){
-                Text("Open in AR")
+            Button(action:{
+                self.showingAlert = true
+            }){
+                Text("Show in AR")
                     .foregroundColor(Color.blue)
-                
             }
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Oops!"), message: Text("AR functionality is not yet implemented, but we're working on it."), dismissButton: .default(Text("Got it!")))
         }
+        }.navigationBarTitle("Tutorial \(tutorial.title ?? "Unknown")")
     }
 }
 

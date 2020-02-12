@@ -20,7 +20,11 @@ extension Tutorial {
     @NSManaged public var id: UUID?
     @NSManaged public var title: String?
     @NSManaged public var step: NSOrderedSet?
-    @NSManaged public var stepCount: Int16
+    //@NSManaged public var stepCount: Int16
+    
+    var unwrappedStep: NSOrderedSet{
+        step ?? []
+    }
 
 }
 
