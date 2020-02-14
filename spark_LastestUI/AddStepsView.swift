@@ -12,6 +12,8 @@ struct AddStepsView: View {
     @Environment(\.managedObjectContext) var moc
     @Environment(\.presentationMode) var presentationMode
     
+    @State private var showError = false
+    
     @State private var description = ""
     @State private var pos1Column = ""
     @State private var pos1Row = ""
@@ -63,12 +65,22 @@ struct AddStepsView: View {
                 newStep.pos1Column = self.pos1Column
                 newStep.pos2Row = self.pos2Row
                 newStep.pos2Column = self.pos2Column
-                newStep.tutorial = self.tutorialToAddStep
-                newStep.stepNum = Int16(self.tutorialToAddStep.unwrappedStep.count)
-                try? self.moc.save()
-                self.presentationMode.wrappedValue.dismiss()
+                newStep.stepNum = Int16(self.tutorialToAddStep.unwrappedStep.count+1)
+                
+                if(self.tutorialToAddStep.getPositionsConflict(coordinates: "\(self.pos1Column)\(self.pos1Row)")){
+                    self.showError = true
+                }else{
+                    newStep.tutorial = self.tutorialToAddStep
+                    try? self.moc.save()
+                    self.presentationMode.wrappedValue.dismiss()
+                }
             })
         }
+            .alert(isPresented: $showError) {
+                Alert(title: Text("Position Conflict"), message: Text("You have already added a step with a component at position \(self.pos1Column)\(self.pos1Row)"), dismissButton: .default(Text("OK")){
+                    self.showError=false
+                    })
+            }
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }

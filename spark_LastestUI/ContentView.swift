@@ -13,6 +13,7 @@ struct ContentView: View {
     @FetchRequest(entity: Tutorial.entity(), sortDescriptors: []) var tutorials: FetchedResults<Tutorial>
     
     @State private var showingAddScreen = false
+    @State private var showingViewChoice = false
     
     func deleteTutorial(at offsets: IndexSet){
         for offset in offsets{

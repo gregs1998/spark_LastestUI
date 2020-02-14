@@ -50,4 +50,8 @@ extension Step {
     var wrappedComponentType: String{
         componentType ?? "Resistor"
     }
+    
+    var wrappedTutorial: Tutorial{
+        tutorial ?? Tutorial()
+    }
 }

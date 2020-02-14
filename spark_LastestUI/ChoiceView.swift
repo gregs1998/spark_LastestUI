@@ -14,6 +14,7 @@ struct ChoiceView: View {
     @State private var showingAlert = false
     
     let tutorial: Tutorial
+    
     var body: some View {
         Form{
             NavigationLink(destination: StepsView(currentTutorial: tutorial)){
@@ -29,6 +30,10 @@ struct ChoiceView: View {
             Alert(title: Text("Oops!"), message: Text("AR functionality is not yet implemented, but we're working on it."), dismissButton: .default(Text("Got it!")))
         }
         }.navigationBarTitle("Tutorial \(tutorial.title ?? "Unknown")")
+            .onAppear(perform: {
+                print(self.tutorial)
+                print("break")
+            })
     }
 }
 

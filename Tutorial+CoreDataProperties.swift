@@ -25,6 +25,18 @@ extension Tutorial {
     var unwrappedStep: NSOrderedSet{
         step ?? []
     }
+    
+    func getPositionsConflict(coordinates:String)->Bool{
+        var positionCoords:[String] = [""]
+    for step in self.unwrappedStep{
+        positionCoords.append("\((step as! Step).wrappedPos1Column)\((step as! Step).wrappedPos1Row)")
+        }
+        print(positionCoords)
+        if (positionCoords.contains(coordinates)){
+            return true
+        }
+            return false
+    }
 
 }
 

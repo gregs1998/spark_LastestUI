@@ -11,10 +11,12 @@ import SwiftUI
 struct StepsList: View {
     @Environment(\.managedObjectContext) var moc
     var fetchRequest: FetchRequest<Step>
-
-    init(tutorial: Tutorial) {
+    
+    @Binding var isEditing: Bool
+    
+    init(tutorial: Tutorial, isEditing: Binding<Bool>) {
         fetchRequest = FetchRequest<Step>(entity: Step.entity(), sortDescriptors: [NSSortDescriptor(key: "stepNum", ascending: true)], predicate: NSPredicate(format: "tutorial == %@", tutorial))
-        
+        self._isEditing = isEditing
     }
     
     func deleteStep(at offsets: IndexSet){
@@ -25,21 +27,15 @@ struct StepsList: View {
             }
             moc.delete(step)
         }
-            try? moc.save()
-        }
+        try? moc.save()
+    }
     
     
     var body: some View {
         List{
             ForEach(fetchRequest.wrappedValue, id:\.self){ step in
-                VStack(alignment: .leading){
-                    Text("\(step.wrappedDescrip) (Step #\(step.stepNum))")
-                        .fontWeight(.bold)
-                    Text("\(step.wrappedComponentType)")
-                    Text("\(step.wrappedPos1Column) \(step.wrappedPos1Row)")
-                    if(step.wrappedComponentType == "Resistor"){
-                        Text("\(step.wrappedPos2Column) \(step.wrappedPos2Row)")
-                    }
+                NavigationLink(destination: StepEditView(step: step)){
+                    StepTextView(step: step)
                 }
             }.onDelete(perform: deleteStep)
         }
