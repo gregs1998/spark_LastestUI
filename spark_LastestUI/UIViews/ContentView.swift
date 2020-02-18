@@ -39,10 +39,15 @@ struct ContentView: View {
                 }
             .navigationBarTitle("Tutorials")
             .navigationBarItems(trailing:
-                Button(action: {
+                HStack{
+                    Image(systemName: "square.and.arrow.down")
+                        .foregroundColor(Color.blue)
+                    Spacer()
+                    Button(action: {
                     self.showingAddScreen.toggle()
                 }) {
                     Image(systemName: "plus")
+                }
                 }
             )
                 .sheet(isPresented: $showingAddScreen){

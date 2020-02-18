@@ -20,10 +20,12 @@ struct AddStepsView: View {
     @State private var pos2Column = ""
     @State private var pos2Row = ""
     @State private var componentType = ""
+    @State private var voltage = ""
+    @State private var resistance = ""
     
     let tutorialToAddStep: Tutorial
     
-    let componentTypes = ["Resistor", "Power Source (Vcc)", "Ground (GND)"]
+    let componentTypes = ["Resistor", "Voltage Source (Vcc)", "Ground (GND)"]
     
     var body: some View {
         NavigationView{
@@ -53,6 +55,16 @@ struct AddStepsView: View {
                                 .keyboardType(.numberPad)
                         }
                     }
+                    Section{
+                        TextField("Resistance", text: $resistance)
+                        .keyboardType(.numberPad)
+                    }
+                }
+                if(self.componentType == "Voltage Source (Vcc)"){
+                    Section{
+                        TextField("Voltage", text: $voltage)
+                        .keyboardType(.numberPad)
+                    }
                 }
             }
             .navigationBarTitle("Add Step")
@@ -65,6 +77,8 @@ struct AddStepsView: View {
                 newStep.pos1Column = self.pos1Column
                 newStep.pos2Row = self.pos2Row
                 newStep.pos2Column = self.pos2Column
+                newStep.resistance = self.resistance
+                newStep.voltage = self.voltage
                 newStep.stepNum = Int16(self.tutorialToAddStep.unwrappedStep.count+1)
                 
                 if(self.tutorialToAddStep.getPositionsConflict(coordinates: "\(self.pos1Column)\(self.pos1Row)")){

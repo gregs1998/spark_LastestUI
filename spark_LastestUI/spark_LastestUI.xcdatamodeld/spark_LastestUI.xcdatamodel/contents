@@ -8,7 +8,9 @@
         <attribute name="pos1Row" optional="YES" attributeType="String"/>
         <attribute name="pos2Column" optional="YES" attributeType="String"/>
         <attribute name="pos2Row" optional="YES" attributeType="String"/>
+        <attribute name="resistance" optional="YES" attributeType="String"/>
         <attribute name="stepNum" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="voltage" optional="YES" attributeType="String"/>
         <relationship name="tutorial" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tutorial" inverseName="step" inverseEntity="Tutorial"/>
     </entity>
     <entity name="Tutorial" representedClassName="Tutorial" syncable="YES">
@@ -18,7 +20,7 @@
         <relationship name="step" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Step" inverseName="tutorial" inverseEntity="Step"/>
     </entity>
     <elements>
-        <element name="Step" positionX="-54" positionY="9" width="128" height="178"/>
+        <element name="Step" positionX="-54" positionY="9" width="128" height="208"/>
         <element name="Tutorial" positionX="-63" positionY="-18" width="128" height="103"/>
     </elements>
 </model>

@@ -22,6 +22,8 @@ extension Step {
     @NSManaged public var pos2Row: String?
     @NSManaged public var pos1Column: String?
     @NSManaged public var pos2Column: String?
+    @NSManaged public var resistance: String?
+    @NSManaged public var voltage: String?
     @NSManaged public var componentType: String?
     @NSManaged public var id: UUID?
     @NSManaged public var tutorial: Tutorial?
@@ -45,6 +47,14 @@ extension Step {
     
     var wrappedPos2Column: String{
         pos2Column ?? "A"
+    }
+    
+    var wrappedVoltage: String{
+        voltage ?? "0"
+    }
+    
+    var wrappedResistance: String{
+        resistance ?? "0"
     }
     
     var wrappedComponentType: String{
