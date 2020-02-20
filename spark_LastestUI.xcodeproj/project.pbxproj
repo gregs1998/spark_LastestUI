@@ -26,7 +26,7 @@
 		2691B5C023F475B4008DECE9 /* StepsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2691B5BF23F475B4008DECE9 /* StepsList.swift */; };
 		26AB837323FF38B800D3217F /* resistor2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 26AB837223FF38B800D3217F /* resistor2.scn */; };
 		26AB837723FF38C900D3217F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26AB837423FF38C900D3217F /* Main.storyboard */; };
-		26AB837C23FF3B5D00D3217F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB837B23FF3B5D00D3217F /* ViewController.swift */; };
+		26AB837E23FF3C9000D3217F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB837D23FF3C9000D3217F /* ViewController.swift */; };
 		26EB680123F5067E00F8A652 /* ViewStepNoEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EB680023F5067E00F8A652 /* ViewStepNoEdit.swift */; };
 		26EB680323F5070000F8A652 /* StepEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EB680223F5070000F8A652 /* StepEditView.swift */; };
 		26EB680923F510CB00F8A652 /* ViewStepEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EB680823F510CB00F8A652 /* ViewStepEdit.swift */; };
@@ -61,7 +61,7 @@
 		2691B5BF23F475B4008DECE9 /* StepsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsList.swift; sourceTree = "<group>"; };
 		26AB837223FF38B800D3217F /* resistor2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = resistor2.scn; sourceTree = "<group>"; };
 		26AB837523FF38C900D3217F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../Working-2D-recog/ARKitImageRecognition/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
-		26AB837B23FF3B5D00D3217F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = /Users/gregschloemer/Code/spark_LastestUI/spark_LastestUI/ViewController.swift; sourceTree = "<absolute>"; };
+		26AB837D23FF3C9000D3217F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
 		26EB680023F5067E00F8A652 /* ViewStepNoEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStepNoEdit.swift; sourceTree = "<group>"; };
 		26EB680223F5070000F8A652 /* StepEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepEditView.swift; sourceTree = "<group>"; };
 		26EB680823F510CB00F8A652 /* ViewStepEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStepEdit.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		2664A24923F3090900EAF2E0 /* spark_LastestUI */ = {
 			isa = PBXGroup;
 			children = (
-				26AB837B23FF3B5D00D3217F /* ViewController.swift */,
+				26AB837D23FF3C9000D3217F /* ViewController.swift */,
 				26AB837423FF38C900D3217F /* Main.storyboard */,
 				26AB837223FF38B800D3217F /* resistor2.scn */,
 				26661BBD23FB14D100F3D177 /* Main.storyboard */,
@@ -311,7 +311,7 @@
 				2664A24B23F3090900EAF2E0 /* AppDelegate.swift in Sources */,
 				26F8F68223F354B700589214 /* ChoiceView.swift in Sources */,
 				2664A26D23F322CA00EAF2E0 /* Step+CoreDataClass.swift in Sources */,
-				26AB837C23FF3B5D00D3217F /* ViewController.swift in Sources */,
+				26AB837E23FF3C9000D3217F /* ViewController.swift in Sources */,
 				2691B5C023F475B4008DECE9 /* StepsList.swift in Sources */,
 				2664A25023F3090900EAF2E0 /* spark_LastestUI.xcdatamodeld in Sources */,
 				2664A26A23F31F9B00EAF2E0 /* Tutorial+CoreDataProperties.swift in Sources */,
