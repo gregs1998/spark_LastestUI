@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/gregschloemer/Code/spark_LastestUI/spark_LastestUI/ViewController.swift">
-   </FileRef>
-   <FileRef
       location = "group:spark_LastestUI.xcodeproj">
    </FileRef>
    <FileRef
