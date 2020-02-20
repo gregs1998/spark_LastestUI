@@ -41,10 +41,9 @@ struct StepsView: View {
                 }
                 Section{
                     VStack{
-                        Button(action: {
-                            
-                        }) {
+                        NavigationLink(destination: ARView()){
                             Text("Start in AR")
+                            .foregroundColor(Color.blue)
                         }
                     }
                 }

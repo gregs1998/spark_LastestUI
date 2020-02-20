@@ -22,9 +22,11 @@
 		2664A26D23F322CA00EAF2E0 /* Step+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664A26B23F322CA00EAF2E0 /* Step+CoreDataClass.swift */; };
 		2664A26E23F322CA00EAF2E0 /* Step+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664A26C23F322CA00EAF2E0 /* Step+CoreDataProperties.swift */; };
 		26661BBB23FB13B100F3D177 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26661BBA23FB13B100F3D177 /* ARView.swift */; };
-		26661BBE23FB14D100F3D177 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26661BBC23FB14D100F3D177 /* ViewController.swift */; };
 		26661BBF23FB14D100F3D177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26661BBD23FB14D100F3D177 /* Main.storyboard */; };
 		2691B5C023F475B4008DECE9 /* StepsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2691B5BF23F475B4008DECE9 /* StepsList.swift */; };
+		26AB837323FF38B800D3217F /* resistor2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 26AB837223FF38B800D3217F /* resistor2.scn */; };
+		26AB837723FF38C900D3217F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26AB837423FF38C900D3217F /* Main.storyboard */; };
+		26AB837823FF38C900D3217F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB837623FF38C900D3217F /* ViewController.swift */; };
 		26EB680123F5067E00F8A652 /* ViewStepNoEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EB680023F5067E00F8A652 /* ViewStepNoEdit.swift */; };
 		26EB680323F5070000F8A652 /* StepEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EB680223F5070000F8A652 /* StepEditView.swift */; };
 		26EB680923F510CB00F8A652 /* ViewStepEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EB680823F510CB00F8A652 /* ViewStepEdit.swift */; };
@@ -55,9 +57,11 @@
 		2664A26B23F322CA00EAF2E0 /* Step+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Step+CoreDataClass.swift"; path = "CoreDataModels/Step+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		2664A26C23F322CA00EAF2E0 /* Step+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Step+CoreDataProperties.swift"; path = "CoreDataModels/Step+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		26661BBA23FB13B100F3D177 /* ARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
-		26661BBC23FB14D100F3D177 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		26661BBD23FB14D100F3D177 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2691B5BF23F475B4008DECE9 /* StepsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsList.swift; sourceTree = "<group>"; };
+		26AB837223FF38B800D3217F /* resistor2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = resistor2.scn; sourceTree = "<group>"; };
+		26AB837523FF38C900D3217F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../Working-2D-recog/ARKitImageRecognition/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		26AB837623FF38C900D3217F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../Working-2D-recog/ARKitImageRecognition/ViewController.swift"; sourceTree = "<group>"; };
 		26EB680023F5067E00F8A652 /* ViewStepNoEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStepNoEdit.swift; sourceTree = "<group>"; };
 		26EB680223F5070000F8A652 /* StepEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepEditView.swift; sourceTree = "<group>"; };
 		26EB680823F510CB00F8A652 /* ViewStepEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStepEdit.swift; sourceTree = "<group>"; };
@@ -105,8 +109,10 @@
 		2664A24923F3090900EAF2E0 /* spark_LastestUI */ = {
 			isa = PBXGroup;
 			children = (
+				26AB837423FF38C900D3217F /* Main.storyboard */,
+				26AB837623FF38C900D3217F /* ViewController.swift */,
+				26AB837223FF38B800D3217F /* resistor2.scn */,
 				26661BBD23FB14D100F3D177 /* Main.storyboard */,
-				26661BBC23FB14D100F3D177 /* ViewController.swift */,
 				2664A24A23F3090900EAF2E0 /* AppDelegate.swift */,
 				2664A24C23F3090900EAF2E0 /* SceneDelegate.swift */,
 				26661BB823FB0FB500F3D177 /* UIViews */,
@@ -139,7 +145,6 @@
 				2691B5BF23F475B4008DECE9 /* StepsList.swift */,
 				26EB680A23F514F900F8A652 /* StepTextView.swift */,
 				26EB680223F5070000F8A652 /* StepEditView.swift */,
-				26F8F68123F354B700589214 /* ChoiceView.swift */,
 				2664A26123F30B6700EAF2E0 /* AddTutorialView.swift */,
 			);
 			path = UIViews;
@@ -159,6 +164,7 @@
 		26EB680C23F516E100F8A652 /* Deprecated */ = {
 			isa = PBXGroup;
 			children = (
+				26F8F68123F354B700589214 /* ChoiceView.swift */,
 				26EB680D23F5174800F8A652 /* StepsListEditing.swift */,
 				26EB680023F5067E00F8A652 /* ViewStepNoEdit.swift */,
 				26EB680823F510CB00F8A652 /* ViewStepEdit.swift */,
@@ -246,6 +252,8 @@
 				2664A25A23F3090C00EAF2E0 /* LaunchScreen.storyboard in Resources */,
 				2664A25723F3090C00EAF2E0 /* Preview Assets.xcassets in Resources */,
 				2664A25423F3090C00EAF2E0 /* Assets.xcassets in Resources */,
+				26AB837723FF38C900D3217F /* Main.storyboard in Resources */,
+				26AB837323FF38B800D3217F /* resistor2.scn in Resources */,
 				26661BBF23FB14D100F3D177 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,9 +311,9 @@
 				2664A24B23F3090900EAF2E0 /* AppDelegate.swift in Sources */,
 				26F8F68223F354B700589214 /* ChoiceView.swift in Sources */,
 				2664A26D23F322CA00EAF2E0 /* Step+CoreDataClass.swift in Sources */,
-				26661BBE23FB14D100F3D177 /* ViewController.swift in Sources */,
 				2691B5C023F475B4008DECE9 /* StepsList.swift in Sources */,
 				2664A25023F3090900EAF2E0 /* spark_LastestUI.xcdatamodeld in Sources */,
+				26AB837823FF38C900D3217F /* ViewController.swift in Sources */,
 				2664A26A23F31F9B00EAF2E0 /* Tutorial+CoreDataProperties.swift in Sources */,
 				2664A26423F30F5900EAF2E0 /* AddStepsView.swift in Sources */,
 				26EB680E23F5174800F8A652 /* StepsListEditing.swift in Sources */,
@@ -333,6 +341,14 @@
 				2664A25923F3090C00EAF2E0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		26AB837423FF38C900D3217F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26AB837523FF38C900D3217F /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -456,7 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1AC6FEE2ED57F13AD9F1F58C /* Pods-spark_LastestUI.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"spark_LastestUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 3739MM3Z3G;
@@ -477,7 +493,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBB61DA532FC070F296CF36E /* Pods-spark_LastestUI.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"spark_LastestUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 3739MM3Z3G;

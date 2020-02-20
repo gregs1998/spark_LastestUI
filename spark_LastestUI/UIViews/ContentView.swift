@@ -27,7 +27,7 @@ struct ContentView: View {
         //NavigationView{
                 List{
                     ForEach(tutorials, id: \.self) { tutorial in
-                        NavigationLink(destination: ChoiceView(tutorial: tutorial)){
+                        NavigationLink(destination: StepsView(currentTutorial: tutorial)){
                             VStack(alignment: .leading){
                                 Text(tutorial.title ?? "Unknown")
                                     .fontWeight(.bold)
